@@ -9,7 +9,7 @@ DIP stands for DDN Improvement Proposal. A DIP is a design document providing in
 
 There are four types of DIP:
 
-- **Core**: improvements requiring a consensus fork (e.g. [DIP-5](./Dip-5.md), [DIP-101](./Dip-101.md)), as well as changes that are not necessarily consensus critical but may be relevant to [“core dev” discussions](https://github.com/DDN/pm) (for example, [DIP-90], and the miner/node strategy changes 2, 3, and 4 of [DIP-86](./Dip-86.md)).
+- **Core**: improvements requiring a consensus fork, as well as changes that are not necessarily consensus critical but may be relevant to “core dev”.
 - **Networking**: includes improvements around [p2p] and [Light DDN Subprotocol], as well as proposed improvements to network protocol specifications.
 - **Interface**: includes improvements around client [API] specifications and standards, and also certain language-level standards like method names and [contract instruction]. The label “interface” aligns with the [interfaces repo] and discussion should primarily occur in that repository before a DIP is submitted to the DIPs repository.
 - **DRC**: application-level standards and conventions, including contract standards such as token standards ([NFT]), name registries URI schemes, library/package formats, and wallet formats.
@@ -35,10 +35,10 @@ Once the idea has been vetted, your next responsibility will be to present (by m
 
 Each DIP should have the following parts:
 
-- Preamble - RFC 822 style headers containing metadata about the DIP, including the DIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](./Dip-1.md#Dip-header-preamble) for details.
+- Preamble - RFC 822 style headers containing metadata about the DIP, including the DIP number, a short descriptive title (limited to a maximum of 44 characters), and the author details. See [below](##DIP Header Preamble) for details.
 - Summary - A short (~200 word) description of the technical issue being addressed.
 - Motivation (*optional) - A motivation section is critical for DIPs that want to change the DDN protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the DIP solves. DIP submissions without sufficient motivation may be rejected outright.
-- Specification - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current DDN platforms (cpp-DDN, go-DDN, parity, DDNJ, DDNjs-lib, [and others](https://github.com/DDN/wiki/wiki/Clients).
+- Specification - The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current DDN platforms (DDN, p2p, sdk, and others.
 - Rationale - The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion.
 - Backwards Compatibility - All DIPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The DIP must explain how the author proposes to deal with these incompatibilities. DIP submissions without a sufficient backwards compatibility treatise may be rejected outright.
 - Test Cases - Test cases for an implementation are mandatory for DIPs that are affecting consensus changes. Tests should either be inlined in the DIP as data (such as input/expected output pairs, or included in `../assets/Dip-###/<filename>`.
@@ -48,7 +48,7 @@ Each DIP should have the following parts:
 
 ## DIP Formats and Templates
 
-DIPs should be written in [markdown] format. There is a [template](https://github.com/DDN/DIPs/master/dip-template.md) to follow.
+DIPs should be written in [markdown] format. There is a [template](https://github.com/DDN/DIPs/main/dip-template.md) to follow.
 
 ## DIP Header Preamble
 
